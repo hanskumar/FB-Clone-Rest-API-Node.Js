@@ -10,6 +10,8 @@ router.post('/login',Authcontroller.login);
 
 router.post('/createPost',Auth,PostController.create);
 
+router.get('/allPost/:userId',Auth,PostController.allPost);
+
 
 
 export default router;
